@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Найденные кандидаты</title>
+{% endblock %}
+
+
+{% block body %}
+    <h2>Найдено кандидатов со скиллом {{ skill_name }}: {{ count }}</h2>
+    {% for candidate in candidate_list %}
+        <p><a href=/candidate/{{ candidate.id }}>{{ candidate.name }}</a></p>
+    {% endfor %}
+{% endblock %}
