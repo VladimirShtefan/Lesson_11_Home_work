@@ -2,7 +2,6 @@ from flask import Flask, render_template
 from os.path import join, abspath
 from utils.classes import Candidate
 
-
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 PATH = abspath(join('files', 'candidates.json'))
